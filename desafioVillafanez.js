@@ -6,7 +6,7 @@ class Usuario {
         this.cargo = cargo
     }
 }
-// Arreglo para registrar un usuario
+// Arreglo para registrar un usuario y fecha
 let registro = []
 // Cuántos registros desea
 let numeroRegistros = parseInt(prompt("Ingrese el número de registros que desea completar"))
@@ -19,9 +19,9 @@ function cargaUsuario(registro) {
     let empleadoNombre = prompt("Ingrese su nombre")
     let empleadoApellido = prompt("Ingrese su apellido")
     let empleadoCargo = prompt("Ingrese su cargo")
-    let newUsuario = new Usuario (empleadoNombre, empleadoApellido, empleadoCargo)
-    registro.push(newUsuario)
-    console.log("Se agregó el usuario ", newUsuario)
+    let newUser = new Usuario (empleadoNombre, empleadoApellido, empleadoCargo)
+    registro.push(newUser);
+    console.log("Se agregó el usuario ", newUser)
 }
 // Cargar la fecha
 class Fecha {
@@ -39,8 +39,8 @@ function name(registroFecha) {
     let diaFechaNumero = parseInt(prompt("Ingrese el número del día"))
     let mesFecha = prompt("Ingresa el mes")
     let horasFecha = parseInt(prompt("Ingresa la cantidad de horas extra trabajadas"))
-    let newHorasExtra = new Fecha (diaFecha, diaFechaNumero, mesFecha, horasFecha)
-    registroFecha.pusch(registroFecha)
-    console.log("Se agregó la fecha ", newHorasExtra)
+    let newDate = new Fecha (diaFecha, diaFechaNumero, mesFecha, horasFecha)
+    registroFecha.pusch(newDate);
+    console.log("Se agregó la fecha ", newDate)
 }
 
