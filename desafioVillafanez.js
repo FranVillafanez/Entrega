@@ -11,8 +11,8 @@ let registro = []
 // Cuántos registros desea
 let numeroRegistros = parseInt(prompt("Ingrese el número de registros que desea completar"))
 // Condicional
-for (let index = 0; index <= 10; index++) {
-    cargaUsuario()
+for (let index = 0; index < numeroRegistros; index++) {
+    cargaUsuario(registro)
 }
 // Datos para recolectar y crear un usuario
 function cargaUsuario(registro) {
