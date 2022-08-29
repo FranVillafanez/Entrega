@@ -8,12 +8,13 @@ class Usuario {
 }
 // Arreglo para registrar un usuario y fecha
 let registro = []
-// Cuántos registros desea
-let numeroRegistros = parseInt(prompt("Ingrese el número de registros que desea completar"))
+// Inicio del registro de usuario
+alert ("Ingrese los datos del usuario")
+// let numeroRegistros = parseInt(prompt("Ingrese el número de registros que desea completar"))
 // Condicional
-for (let index = 0; index < numeroRegistros; index++) {
+// for (let index = 0; index < numeroRegistros; index++) {
     cargaUsuario(registro)
-}
+// }
 // Datos para recolectar y crear un usuario
 function cargaUsuario(registro) {
     let empleadoNombre = prompt("Ingrese su nombre")
@@ -33,14 +34,20 @@ class Fecha {
 }
 // Arreglo para registrar la fecha
 let registroFecha = []
+// Cuántas horas
+let cantidadHoras = parseInt(prompt("Ingrese el número de registros que desea completar"))
+// Condicional
+for (let index = 0; index < cantidadHoras; index++) {
+    cargaFecha(registroFecha)
+}
 // Datos para recolectar la fecha
-function name(registroFecha) {
+function cargaFecha(registroFecha) {
     let diaFecha = prompt("Ingrese el día de la semana trabajado")
     let diaFechaNumero = parseInt(prompt("Ingrese el número del día"))
     let mesFecha = prompt("Ingresa el mes")
     let horasFecha = parseInt(prompt("Ingresa la cantidad de horas extra trabajadas"))
     let newDate = new Fecha (diaFecha, diaFechaNumero, mesFecha, horasFecha)
-    registroFecha.pusch(newDate);
+    registroFecha.push(newDate);
     console.log("Se agregó la fecha ", newDate)
 }
 
