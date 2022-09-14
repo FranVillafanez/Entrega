@@ -10,7 +10,7 @@ const empleado = [{ nombre: "Fran", apellido: "Villafáñez", cargo: "Redactor" 
 
                     let newEmp = {
                       nombre: nombre,
-                      apellido:apellido,
+                      apellido: apellido,
                       cargo: cargo,
                     }
                     empleado.push(newEmp)
